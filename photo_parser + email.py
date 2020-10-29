@@ -42,14 +42,15 @@ sender_email = 'ilyvs105@gmail.com'
 receiver_email = 'ilyas.rysbekov@nu.edu.kz'
 password = getpass()
 
-while True:
-    delay = time.sleep(86400)
-    res = requests.get(url, delay)
-    if re.findall(pattern1, res.text):
-        pass
-    elif re.findall(pattern2, res.text):
-# print('Single')
-        gm = Gmail(sender_email, receiver_email , password)
-        gm.send_message('Hi there', 'Single, brazzzzaaaaa :D This message is sent from Python')
-        break
-
+def f():
+	while True:
+	    delay = time.sleep(86400)
+	    res = requests.get(url, delay)
+	    if re.findall(pattern1, res.text):
+	        pass
+	    elif re.findall(pattern2, res.text):
+	# print('Single')
+	        gm = Gmail(sender_email, receiver_email , password)
+	        gm.send_message('Hi there', 'Single, brazzzzaaaaa :D This message is sent from Python')
+	        break
+	        f() # restarts while loop
