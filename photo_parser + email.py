@@ -6,8 +6,8 @@ from getpass import getpass
 
 class Gmail(object):
     def __init__(self, sender_email, receiver_email, password):
-        self.sender_email = 'ilyvs105@gmail.com'
-        self.receiver_email = 'ilyas.rysbekov@nu.edu.kz'
+        self.sender_email = 'asd@asd.com'
+        self.receiver_email = 'qwe@qwe.com'
         # self.sender_email = None
         # self.receiver_email = None
         self.password = getpass()
@@ -38,8 +38,8 @@ pattern2 = r'Page.*bull; Instagra.*'
 # pattern1 = r'Through years'
 # pattern2 = r'Page.*bull; Instagra.*'
 
-sender_email = 'ilyvs105@gmail.com'
-receiver_email = 'ilyas.rysbekov@nu.edu.kz'
+sender_email = 'asd@asd.com'
+receiver_email = 'qwe@qwe.com'
 password = getpass()
 
 def f():
