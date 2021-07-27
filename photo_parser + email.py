@@ -30,13 +30,11 @@ class Gmail(object):
         headers = "\r\n".join(headers)
         self.session.sendmail(self.sender_email, self.receiver_email, headers + "\r\n\r\n" + body)
 
+# url is a URL for exact pic
 url = 'https://www.instagram.com/p/B7tvbqkputO/'
+# pattern1 is a post's comment
 pattern1 = r'At least.*posted this pic'
 pattern2 = r'Page.*bull; Instagra.*'
-
-# url = 'https://www.instagram.com/p/BxSlOCxHDzl/'
-# pattern1 = r'Through years'
-# pattern2 = r'Page.*bull; Instagra.*'
 
 sender_email = 'asd@asd.com'
 receiver_email = 'qwe@qwe.com'
