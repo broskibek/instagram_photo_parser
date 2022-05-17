@@ -8,8 +8,6 @@ class Gmail(object):
     def __init__(self, sender_email, receiver_email, password):
         self.sender_email = 'asd@asd.com'
         self.receiver_email = 'qwe@qwe.com'
-        # self.sender_email = None
-        # self.receiver_email = None
         self.password = getpass()
         self.server = 'smtp.gmail.com'
         self.port = 587
@@ -34,6 +32,7 @@ class Gmail(object):
 url = 'https://www.instagram.com/p/B7tvbqkputO/'
 # pattern1 is a post's comment
 pattern1 = r'At least.*posted this pic'
+#pattern2 is a error of not existing photo
 pattern2 = r'Page.*bull; Instagra.*'
 
 sender_email = 'asd@asd.com'
